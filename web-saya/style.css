@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-color: #0d0d0d;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('/bg.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.scroll-btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* SECTION STYLE */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about, .projects, .contact {
+  background: #111;
+  border-top: 1px solid #222;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.contact-info {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #eee;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.contact-info a {
+  color: #00cec9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-info a:hover {
+  color: #0984e3;
+  text-decoration: underline;
+}
